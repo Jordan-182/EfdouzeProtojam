@@ -1,4 +1,4 @@
-import image from "earth.jpg";
+import image from "/earth.jpg";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import Modal from "../components/Modal";
