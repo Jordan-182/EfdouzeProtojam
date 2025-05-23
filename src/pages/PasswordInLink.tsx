@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
+import image from "../assets/images/link.jpg";
 
 export const PasswordInLink = () => {
   const [inputValue, setInputValue] = useState("");
@@ -74,7 +75,7 @@ export const PasswordInLink = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/link.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

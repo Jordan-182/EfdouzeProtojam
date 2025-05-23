@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
+import image from "../assets/images/navigation.jpg";
 
 export const Navigation = () => {
   const [inputValue, setInputValue] = useState("");
@@ -66,7 +67,7 @@ export const Navigation = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/navigation.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

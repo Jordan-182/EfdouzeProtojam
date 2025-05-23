@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import PasswordAlternative from "../components/PasswordAlternative";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
+import image from "../assets/images/disable.png";
 
 export const KeyboardIsBroken = () => {
   const [inputValue, setInputValue] = useState("");
@@ -67,7 +68,7 @@ export const KeyboardIsBroken = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/disable.png"
+          src={image}
           slideAnimation={slideAnimation}
           maxLength={14}
           isError={isError}

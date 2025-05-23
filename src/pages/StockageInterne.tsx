@@ -5,6 +5,7 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
 import { randomPassword } from "../utils/randomPassword";
+import image from "../assets/images/stockage.jpg";
 
 export const StockageInterne = () => {
   const [inputValue, setInputValue] = useState("");
@@ -75,7 +76,7 @@ export const StockageInterne = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/stockage.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

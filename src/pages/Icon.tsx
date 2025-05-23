@@ -5,6 +5,8 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Icon.module.css";
 import { useRef as useReactRef } from "react";
+import image from "../assets/images/onglet.png";
+import video from "../assets/video/WRONG.mp4";
 
 export const Icon = () => {
   const [inputValue, setInputValue] = useState("");
@@ -74,7 +76,7 @@ export const Icon = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/WRONG.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
@@ -88,7 +90,7 @@ export const Icon = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="/onglet.png"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />
