@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Comique.module.css";
-import image from "/comique.jpg";
+import image from "/comique.png";
 import image2 from "/comique2.jpg";
 
 export const Comique = () => {
