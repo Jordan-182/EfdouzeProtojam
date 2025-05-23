@@ -7,7 +7,7 @@ import styles from "../styles/Icon.module.css";
 import { useRef as useReactRef } from "react";
 import image from "/onglet.png";
 
-import video from "/WRONG.mp4";
+import video from "/video/WRONG.mp4";
 
 export const Icon = () => {
   const [inputValue, setInputValue] = useState("");

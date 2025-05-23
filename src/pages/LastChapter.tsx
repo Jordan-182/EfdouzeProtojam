@@ -6,7 +6,7 @@ import { useCount } from "../context/CountContext";
 import styles from "../styles/LastChapter.module.css";
 import { useRef as useReactRef } from "react";
 import image from "/urlquery.png";
-import video from "/cheh.mp4";
+import video from "/video/cheh.mp4";
 
 export const LastChapter = () => {
   const [inputValue, setInputValue] = useState("");
