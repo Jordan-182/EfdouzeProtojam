@@ -1,7 +1,7 @@
 import { useEffect, useRef as useReactRef, useState } from "react";
 import { useNavigate } from "react-router";
 import image from "/treasure.jpg";
-import video from "/Nononon.mp4";
+import video from "/video/nononon.mp4";
 import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
