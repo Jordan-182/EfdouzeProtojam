@@ -5,7 +5,7 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
 import { randomPassword } from "../utils/randomPassword";
-import image from "../assets/images/stockage.jpg";
+import image from "/stockage.jpg";
 
 export const StockageInterne = () => {
   const [inputValue, setInputValue] = useState("");

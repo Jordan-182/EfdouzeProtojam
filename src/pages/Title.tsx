@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import PasswordAlternative from "../components/PasswordAlternative";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
-import image from "../assets/images/proSkater.png";
+import image from "/proSkater.png";
 
 export const Title = () => {
   const pageId = 14;
