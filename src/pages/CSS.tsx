@@ -5,6 +5,7 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/CSS.module.css";
 import { randomPassword } from "../utils/randomPassword";
+import image from "../assets/images/key.png";
 
 export const CSS = () => {
   const [inputValue, setInputValue] = useState("");
@@ -66,7 +67,7 @@ export const CSS = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/key.png"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

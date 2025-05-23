@@ -5,6 +5,8 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Console.module.css";
 import { useRef as useReactRef } from "react";
+import image from "../assets/images/consoles.jpg";
+import video from "../assets/video/piege.mp4";
 
 export const Console = () => {
   const [inputValue, setInputValue] = useState("");
@@ -87,7 +89,7 @@ export const Console = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/piege.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
@@ -102,7 +104,7 @@ export const Console = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/consoles.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

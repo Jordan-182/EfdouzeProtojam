@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Comique.module.css";
+import image from "../assets/images/controls.png";
 
 export const Musique = () => {
   const [inputValue, setInputValue] = useState("");
@@ -75,7 +76,7 @@ export const Musique = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/controls.png"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

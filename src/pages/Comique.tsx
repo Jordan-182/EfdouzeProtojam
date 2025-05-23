@@ -4,6 +4,8 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Comique.module.css";
+import image from "../assets/images/comique.jpg";
+import image2 from "../assets/images/comique2.jpg";
 
 export const Comique = () => {
   const [inputValue, setInputValue] = useState("");
@@ -69,7 +71,7 @@ export const Comique = () => {
   return (
     <>
       <div className={styles.background}>
-        <img src="src/assets/images/comique.png" />
+        <img src={image} />
       </div>
       <div className={styles.container}>
         <Modal isOpen={showModal} link="/Clicker" />
@@ -77,7 +79,7 @@ export const Comique = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/comique2.jpg"
+          src={image2}
           slideAnimation={slideAnimation}
           isError={isError}
         />

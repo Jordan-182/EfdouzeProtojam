@@ -4,6 +4,7 @@ import Modal from "../components/Modal";
 import PasswordAlternative from "../components/PasswordAlternative";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
+import image from "../assets/images/proSkater.png";
 
 export const Title = () => {
   const pageId = 14;
@@ -89,7 +90,7 @@ export const Title = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="/proSkater.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           Disable={false}
           maxLength={0}

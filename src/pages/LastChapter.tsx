@@ -5,6 +5,8 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/LastChapter.module.css";
 import { useRef as useReactRef } from "react";
+import image from "../assets/images/urlquery.png";
+import video from "../assets/video/cheh.mp4";
 
 export const LastChapter = () => {
   const [inputValue, setInputValue] = useState("");
@@ -81,7 +83,7 @@ export const LastChapter = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/cheh.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
@@ -95,7 +97,7 @@ export const LastChapter = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/urlquery.png"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

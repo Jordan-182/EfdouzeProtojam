@@ -6,6 +6,8 @@ import { useCount } from "../context/CountContext";
 import styles from "../styles/Leon.module.css";
 import { randomPassword } from "../utils/randomPassword";
 import { useRef as useReactRef } from "react";
+import image from "../assets/images/Leon.jpg";
+import video from "../assets/video/nerveux.mp4";
 
 export const Leon = () => {
   const [inputValue, setInputValue] = useState("");
@@ -82,7 +84,7 @@ export const Leon = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/nerveux.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
@@ -96,7 +98,7 @@ export const Leon = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/Leon.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />
