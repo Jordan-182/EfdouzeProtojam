@@ -6,7 +6,7 @@ import { useCount } from "../context/CountContext";
 import styles from "../styles/Console.module.css";
 import { useRef as useReactRef } from "react";
 import image from "/consoles.jpg";
-import video from "/piege.mp4";
+import video from "/video/piege.mp4";
 
 export const Console = () => {
   const [inputValue, setInputValue] = useState("");
