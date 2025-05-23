@@ -7,7 +7,7 @@ import styles from "../styles/Leon.module.css";
 import { randomPassword } from "../utils/randomPassword";
 import { useRef as useReactRef } from "react";
 import image from "/Leon.jpg";
-import video from "/nerveux.mp4";
+import video from "/video/nerveux.mp4";
 
 export const Leon = () => {
   const [inputValue, setInputValue] = useState("");

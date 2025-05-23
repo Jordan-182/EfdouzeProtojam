@@ -5,7 +5,7 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Over.module.css";
 import { randomPassword } from "../utils/randomPassword";
-import image from "/proSkater.png";
+import image from "/hover.jpg";
 
 export const Over = () => {
   const [inputValue, setInputValue] = useState("");
