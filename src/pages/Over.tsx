@@ -101,7 +101,7 @@ export const Over = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/rickroll.mp4"
+          src="/video/rickroll.mp4"
           width="560"
           height="315"
           preload="auto"
