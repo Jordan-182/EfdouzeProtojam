@@ -1,0 +1,23 @@
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Leon {
+  color: var(--backgroundColor);
+  position: fixed;
+  top: 30px;
+  right: 50px;
+}
+
+.video {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,29 @@
+.modal {
+  position: absolute;
+  z-index: 2;
+  height: 300px;
+  width: 450px;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 5px;
+
+  a {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 5px;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--secondaryColor);
+    }
+  }
+}
