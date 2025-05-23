@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import PasswordAlternative from "../components/PasswordAlternative";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
-import image from "../assets/images/disable.png";
+import image from "/disable.png";
 
 export const KeyboardIsBroken = () => {
   const [inputValue, setInputValue] = useState("");

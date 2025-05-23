@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
-import image from "../assets/images/hover.jpg";
-import video from "../assets/video/rickroll.mp4";
 import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Over.module.css";
 import { randomPassword } from "../utils/randomPassword";
+import image from "/proSkater.png";
 
 export const Over = () => {
   const [inputValue, setInputValue] = useState("");
@@ -102,7 +101,7 @@ export const Over = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src={video}
+          src="src/assets/video/rickroll.mp4"
           width="560"
           height="315"
           preload="auto"

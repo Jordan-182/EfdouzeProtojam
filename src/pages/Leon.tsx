@@ -6,8 +6,8 @@ import { useCount } from "../context/CountContext";
 import styles from "../styles/Leon.module.css";
 import { randomPassword } from "../utils/randomPassword";
 import { useRef as useReactRef } from "react";
-import image from "../assets/images/Leon.jpg";
-import video from "../assets/video/nerveux.mp4";
+import image from "/Leon.jpg";
+import video from "/nerveux.mp4";
 
 export const Leon = () => {
   const [inputValue, setInputValue] = useState("");

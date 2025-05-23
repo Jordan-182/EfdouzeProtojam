@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Homepage.module.css";
-import image from "../assets/images/link.jpg";
+import image from "/link.jpg";
 
 export const PasswordInLink = () => {
   const [inputValue, setInputValue] = useState("");

@@ -4,7 +4,7 @@ import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Comique.module.css";
-import image from "../assets/images/controls.png";
+import image from "/controls.png";
 
 export const Musique = () => {
   const [inputValue, setInputValue] = useState("");
@@ -66,7 +66,7 @@ export const Musique = () => {
     <>
       <div className={styles.background}>
         <audio>
-          <source src="/musique/musique.mp3" type="audio/mpeg" />
+          <source src="src/assets/musique/musique.mp3" type="audio/mpeg" />
           Votre navigateur ne supporte pas l'élément audio.
         </audio>
       </div>

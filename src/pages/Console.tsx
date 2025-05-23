@@ -5,8 +5,8 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Console.module.css";
 import { useRef as useReactRef } from "react";
-import image from "../assets/images/consoles.jpg";
-import video from "../assets/video/piege.mp4";
+import image from "/consoles.jpg";
+import video from "/piege.mp4";
 
 export const Console = () => {
   const [inputValue, setInputValue] = useState("");

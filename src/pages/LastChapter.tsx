@@ -5,8 +5,8 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/LastChapter.module.css";
 import { useRef as useReactRef } from "react";
-import image from "../assets/images/urlquery.png";
-import video from "../assets/video/cheh.mp4";
+import image from "/urlquery.png";
+import video from "/cheh.mp4";
 
 export const LastChapter = () => {
   const [inputValue, setInputValue] = useState("");

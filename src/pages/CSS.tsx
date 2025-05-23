@@ -5,7 +5,7 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/CSS.module.css";
 import { randomPassword } from "../utils/randomPassword";
-import image from "../assets/images/key.png";
+import image from "/key.png";
 
 export const CSS = () => {
   const [inputValue, setInputValue] = useState("");

@@ -5,8 +5,9 @@ import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/Icon.module.css";
 import { useRef as useReactRef } from "react";
-import image from "../assets/images/onglet.png";
-import video from "../assets/video/WRONG.mp4";
+import image from "/onglet.png";
+
+import video from "/WRONG.mp4";
 
 export const Icon = () => {
   const [inputValue, setInputValue] = useState("");
