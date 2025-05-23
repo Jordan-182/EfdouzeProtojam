@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
+import image from "../assets/images/hover.jpg";
+import video from "../assets/video/rickroll.mp4";
 import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
@@ -85,7 +87,7 @@ export const Over = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/hover.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />
@@ -100,7 +102,7 @@ export const Over = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/rickroll.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
