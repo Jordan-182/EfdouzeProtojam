@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef as useReactRef, useState } from "react";
 import { useNavigate } from "react-router";
+import image from "../assets/images/treasure.jpg";
+import video from "../assets/video/Nononon.mp4";
 import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
 import styles from "../styles/BeautyInside.module.css";
-import { useRef as useReactRef } from "react";
 
 export const BeautyInside = () => {
   const [inputValue, setInputValue] = useState("");
@@ -74,7 +75,7 @@ export const BeautyInside = () => {
       <div className={styles.video}>
         <video
           ref={videoRef}
-          src="src/assets/video/nononon.mp4"
+          src={video}
           width="560"
           height="315"
           preload="auto"
@@ -88,7 +89,7 @@ export const BeautyInside = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="src/assets/images/treasure.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />

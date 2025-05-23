@@ -1,3 +1,4 @@
+import image from "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/thumbnails/image/NASA_Earth.jpg";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import Modal from "../components/Modal";
@@ -75,7 +76,7 @@ export const Batman = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src="https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/thumbnails/image/NASA_Earth.jpg"
+          src={image}
           slideAnimation={slideAnimation}
           isError={isError}
         />
