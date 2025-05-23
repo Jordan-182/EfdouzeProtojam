@@ -66,7 +66,7 @@ export const Musique = () => {
     <>
       <div className={styles.background}>
         <audio>
-          <source src="src/assets/musique/musique.mp3" type="audio/mpeg" />
+          <source src="/musique/musique.mp3" type="audio/mpeg" />
           Votre navigateur ne supporte pas l'élément audio.
         </audio>
       </div>
