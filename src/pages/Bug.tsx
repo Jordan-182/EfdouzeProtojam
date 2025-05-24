@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import imaze from "../../public/motdepase.png";
 import Modal from "../components/Modal";
 import Password from "../components/Password";
 import { useCount } from "../context/CountContext";
@@ -67,7 +66,7 @@ export const Bug = () => {
           value={inputValue}
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
-          src={imaze}
+          src="/motdepase.png"
           slideAnimation={slideAnimation}
           isError={isError}
         />
